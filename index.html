@@ -12,15 +12,56 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Grey's Name Tag</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Welcome to the GreyCorp Name Tag Customizer!</h1>
+        <h2>Here at GreyCorp, we value your individuality</h2>
     </header>
+    <div class="name-tag">
+        <section class="top">
+            <h1>Hello!</h1>
+            <h3>My name is...</h3>
+        </section>
 
+        <section class="middle">
+            <span id="first-name"></span>
+            <span id="last-name"></span>
+            <span id="pronouns"></span>
+        </section>
+
+        <section class="bottom"></section>
+
+        <section class="your-info-input">
+            <input id="your-name" placeholder="What would you like to be called?">
+            <input placeholder="And your preferred pronouns?">
+        </section>
+
+        <section class="not-colors">
+            <label for="shade">Choose your favorite color!</label>
+                <select name="shade" id="shade">
+                    <option value="grey">Grey</option><!-- rgb(128, 128, 128) -->
+                    <option value="light-grey">Light Grey</option><!-- rgb(211, 211, 211) -->
+                    <option value="dark-grey">Dark Grey</option><!-- rgb(169, 169, 169) -->
+                    <option value="pewter">Pewter</option><!-- rgb(137, 148, 153) -->
+                </select>
+            </label>
+        </section>
+
+        <section class="not-fonts">
+            <label for="shade">Choose your favorite color!</label>
+                <select name="glyph" id="glyph">
+                    <option value="arial">Arial</option>
+                    <option value="velvetica">Helvetica</option>
+                    <option value="verdana">Verdana</option>
+                    <option value="trebuchet">Trebuchet</option>
+                </select>
+            </label>
+        </section>
+
+    </div>
     <main>
 
     </main>
