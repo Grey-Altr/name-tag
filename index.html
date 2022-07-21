@@ -18,55 +18,54 @@
 <body>
     <header>
         <h1>Welcome to the GreyCorp Name Tag Customizer!</h1>
-        <h2>Here at GreyCorp, we value your individuality</h2>
+        <h3>Here at GreyCorp, we value your individuality</h3>
     </header>
-    <div class="name-tag">
-        <section class="top">
-            <h1>Hello!</h1>
-            <h3>My name is...</h3>
-        </section>
 
-        <section class="middle">
-            <span id="first-name"></span>
-            <span id="last-name"></span>
-            <span id="pronouns"></span>
-        </section>
+    <main>
+        <div class="name-tag">
+            <section class="top">
+                <h2>Hello!</h2>
+                <h3>My name is...</h3>
+            </section>
 
-        <section class="bottom"></section>
+            <section class="middle">
+                <span id="name"></span>
+                <span id="pronouns"></span>
+            </section>
 
-        <section class="your-info-input">
-            <input id="your-name" placeholder="What would you like to be called?">
-            <input placeholder="And your preferred pronouns?">
-        </section>
+            <section class="bottom"></section>
+        </div>
+        <div id="drone-info-input">
+            <section id="your-info-input">
+                <input id="your-name" placeholder="What would you like to be called?">
+                <input id="your-pronouns" placeholder="And your preferred pronouns?">
+            </section>
 
-        <section class="not-colors">
-            <label for="shade">Choose your favorite color!</label>
+            <section class="not-colors">
+                <label for="shade">Choose your favorite color!</label>
                 <select name="shade" id="shade">
                     <option value="grey">Grey</option><!-- rgb(128, 128, 128) -->
                     <option value="light-grey">Light Grey</option><!-- rgb(211, 211, 211) -->
                     <option value="dark-grey">Dark Grey</option><!-- rgb(169, 169, 169) -->
                     <option value="pewter">Pewter</option><!-- rgb(137, 148, 153) -->
                 </select>
-            </label>
-        </section>
+                </label>
+            </section>
 
-        <section class="not-fonts">
-            <label for="shade">Choose your favorite color!</label>
+            <section class="not-fonts">
+                <label for="shade">Choose your favorite font!&nbsp;</label>
                 <select name="glyph" id="glyph">
                     <option value="arial">Arial</option>
                     <option value="velvetica">Helvetica</option>
                     <option value="verdana">Verdana</option>
                     <option value="trebuchet">Trebuchet</option>
                 </select>
-            </label>
-        </section>
-
-    </div>
-    <main>
-
+                </label>
+            </section>
+        </div>
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
+    <footer>&copy;2022 GreyCorp</footer>
 
     <script type="module" src="app.js"></script>
 </body>

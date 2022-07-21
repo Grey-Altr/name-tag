@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: white;
+    --header-background: rgb(200, 200, 200);
     --footer-background: rgb(243, 242, 242);
 }
 
@@ -15,13 +15,114 @@ body {
 header {
     position: sticky;
     top: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: var(--header-background);
 }
 
+h2 {
+    margin: 0px;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
 main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-tag {
+    height: 224px;
+    width: 600px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.middle {
+    font-size: 1.5rem;
+    height: 150px;
+    width: 600px;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    height: 100px;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    border-radius: 0 0 20px 20px;
+}
+
+#drone-info-input {
+    margin-top: 200px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-info-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-name {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-pronouns {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 5px;
+}
+
+select {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.not-colors {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
