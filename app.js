@@ -18,4 +18,5 @@ buttonEL.addEventListener('click', () => {
   pronounsEl.textContent = pronounsInputEl.value;
   document.getElementById('top').style.backgroundColor = shadeEl.value;
   document.getElementById('bottom').style.backgroundColor = shadeEl.value;
+  document.getElementById('middle').style.fontFamily = glyphEl.value;
 });
